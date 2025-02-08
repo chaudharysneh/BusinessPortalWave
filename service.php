@@ -35,8 +35,8 @@
 			<div class="card dark-bg" style="border-radius: 18px;">
 				<div class="card-header dark-bg-still">
 					<div class="d-flex align-items-center">
-						<h4 class="text-light mb-0">Apartment</h4>
-						<button class="btn bg-light ms-auto mb-0"><a href="add-apartment-unit.php" class="dark-text"><i class="ni ni-building mt-1"></i>&nbsp;&nbsp;Add Apartment Units</a></button>
+						<h4 class="light-text-still mb-0">Services</h4>
+						<button class="btn bg-light ms-auto mb-0"><a href="add-apartment-unit.php" class="dark-text-still"><i class="ni ni-building mt-1"></i>&nbsp;&nbsp;Add Service</a></button>
 					</div>
 				</div>
 				<div class="card-body">
@@ -61,10 +61,11 @@
 								<thead class="thead-light">
 									<tr role="row align-items-center">
 										<th class="light-text font-weight-bolder sort" data-sortable="">#</th>
-										<th scope="col" class="light-text font-weight-bolder sort" data-sort="status">Apartment Name</th>
-										<th scope="col" class="light-text font-weight-bolder sort">Apartment Number</th>
-										<th scope="col" class="light-text font-weight-bolder sort" data-sort="completion">Parking Number</th>
-										<th scope="col" class="light-text font-weight-bolder sort">Documents</th>
+										<th scope="col" class="light-text font-weight-bolder sort" data-sort="status">Service Name</th>
+										<th scope="col" class="light-text font-weight-bolder sort">Cost</th>
+										<th scope="col" class="light-text font-weight-bolder sort" data-sort="completion">Duration</th>
+										<th scope="col" class="light-text font-weight-bolder sort">Pricing Type</th>
+										<th scope="col" class="light-text font-weight-bolder sort">Status</th>
 										<th scope="col" class="light-text font-weight-bolder sort">Action</th>
 									</tr>
 								</thead>
@@ -75,18 +76,19 @@
 										<!-- <td>102</td> -->
 										<td>
 											<div class="d-flex align-items-center">
-												<img src="./assets/img/home-decor-3.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
-												<div class="light-text"><strong>Sun Bunglows</strong> <br> Sri Ramesh Thakur <br> 123 Main street, New York</div>
+												<img src="./assets/img/laundary.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
+												<div class="light-text"><strong>Laundry & Dry Cleaning</strong> <br>Home Services</div>
 											</div>
 										</td>
-										<td class="light-text">101</td>
-										<td class="light-text">33</td>
-										<td><a href="./docs/simple-pdf.pdf" class="light-text text-decoration-underline">Property Document</a></td>
+										<td class="light-text">£15.00</td>
+										<td class="light-text">Same-day</td>
+										<td class="light-text">Starts From</td>
+										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text opacity-10"></i></a></div>
-												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text opacity-10"></i></button>
+												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 												<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 													<div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
 														<div class="modal-content">
@@ -120,42 +122,43 @@
 										<th scope="row" class="light-text">2</th>
 										<td>
 											<div class="d-flex align-items-center">
-												<img src="./assets/img/home-decor-2.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
-												<div class="light-text"><strong>Sun Bunglows</strong> <br> Sri Ramesh Thakur <br> 123 Main street, New York</div>
+												<img src="./assets/img/packagemanagement.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
+												<div class="light-text"><strong>Package Management</strong> <br>Concierge Services</div>
 											</div>
 										</td>
-										<td class="light-text">102</td>
-										<td class="light-text">33</td>
-										<td><a href="./docs/simple-pdf.pdf" class="light-text text-decoration-underline">Property Document</a></td>
+										<td class="light-text">£5</td>
+										<td class="light-text">1 hour</td>
+										<td class="light-text">Fixed</td>
+										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text opacity-10"></i></a></div>
-												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text opacity-10"></i></button>
+												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 											</div>
 										</td>
 									</tr>
-
-
 									<tr>
 										<th scope="row" class="light-text">3</th>
 										<td>
 											<div class="d-flex align-items-center">
-												<img src="./assets/img/home-decor-1.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
-												<div class="light-text"><strong>Sun Bunglows</strong> <br> Sri Ramesh Thakur <br> 123 Main street, New York</div>
+												<img src="./assets/img/eventmanage.jpg" alt="Profile" class="rounded-2 me-2 object-fit-cover" width="140" height="80">
+												<div class="light-text"><strong>Event Planning</strong> <br>Event Management</div>
 											</div>
 										</td>
-										<td class="light-text">103</td>
-										<td class="light-text">33</td>
-										<td><a href="./docs/simple-pdf.pdf" class="light-text text-decoration-underline">Property Document</a></td>
+										<td class="light-text">Custom Pricing</td>
+										<td class="light-text">Varies</td>
+										<td class="light-text">Custom</td>
+										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text opacity-10"></i></a></div>
-												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text opacity-10"></i></button>
+												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 											</div>
 										</td>
 									</tr>
+
 
 
 								</tbody>

@@ -151,6 +151,10 @@
         left: 34%;
         transform: translate(-50%, -50%); */
   }
+
+  .dataTable-dropdown label{
+    color:#fff;
+  }
 </style>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -478,6 +482,9 @@
         const tableHeader = document.querySelector("table.fc-col-header");
         const tabltitle = document.querySelector(".fc .fc-toolbar-title");
         const dates = document.querySelectorAll("a.fc-daygrid-day-number");
+        const tablelabels = document.querySelectorAll(".dataTable-dropdown label");
+
+        
 
 
         elements.forEach((element) => {
@@ -498,6 +505,10 @@
 
             dates.forEach(date => {
               date.style.color = "#FEFEFE";
+            });
+
+            tablelabels.forEach(tablelabel => {
+              tablelabel.style.color = "#fff";
             });
 
             updateChartLegendColor("#fff");
@@ -521,6 +532,10 @@
 
             dates.forEach(date => {
               date.style.color = "#000";
+            });
+
+            tablelabels.forEach(tablelabel => {
+              tablelabel.style.color = "#1A1A27";
             });
 
             updateChartLegendColor("#1A1A27");

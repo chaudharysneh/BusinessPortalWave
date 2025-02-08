@@ -27099,7 +27099,7 @@ pre[class*="language-"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8392ab;
+    color: #888;
     padding: 0;
     margin: 0 3px;
     border: 1px solid #dee2e6;
@@ -27118,9 +27118,9 @@ pre[class*="language-"] {
 }
 .dataTable-bottom .dataTable-pagination .dataTable-pagination-list .active a {
     background: transparent;
-    background-image: linear-gradient(310deg, #0f0f0f, #0f0f0f);
+    background-image: linear-gradient(310deg, #fefefe, #fefefe);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-    color: #fff;
+    color: #1a1a27;
     border: none;
     border-radius: 50% !important;
 }

@@ -32,7 +32,7 @@
                 <div class="card-header dark-bg-still text-white">
                     <div class="d-flex align-items-center">
                         <h4 class="light-text-still mb-0">Add Service Details</h4>
-                        <button class="btn light-bg ms-auto mb-0"><a href="units.php" class="dark-text-still"><i class="ni ni-bold-left mt-1"></i>&nbsp;&nbsp; Back</a></button>
+                        <button class="btn light-bg ms-auto mb-0"><a href="service.php" class="dark-text-still"><i class="ni ni-bold-left mt-1"></i>&nbsp;&nbsp; Back</a></button>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="block_number" class="control-label light-text required">Service Name<span style="color: red">*</span></label>
-                                    <input class="form-control " placeholder="Core" name="block_number" type="text" id="block_number">
+                                    <input class="form-control " placeholder="lorem ispum" name="block_number" type="text" id="block_number">
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -60,7 +60,7 @@
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="no_of_keys" class="control-label light-text">Service Description</label>
-                                    <textarea class="form-control" rows="1" placeholder="No. of Keys" name="no_of_keys" type="text" id="no_of_keys"></textarea>
+                                    <textarea class="form-control" rows="1" placeholder="lorem..." name="no_of_keys" type="text" id="no_of_keys"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -83,43 +83,43 @@
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="letting_agent_info" class="control-label light-text">Duration</label>
-                                    <input class="form-control " placeholder="Letting Agent Information" name="letting_agent_info" type="text" id="letting_agent_info">
+                                    <input class="form-control " placeholder="2 hour" name="letting_agent_info" type="text" id="letting_agent_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Features</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="lorem ispum, lorem ispum,..." name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Benefits</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="lorem ispum, lorem ispum,..." name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Availability</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="Daily" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Status</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="Active" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Contact Phone</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="XXXX 988787" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group ">
                                     <label for="bicycle_scooter_info" class="control-label light-text">Contact Email</label>
-                                    <input class="form-control " placeholder="Bicycle / Scooter Information" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
+                                    <input class="form-control " placeholder="xyz@gmail.com" name="bicycle_scooter_info" type="text" id="bicycle_scooter_info">
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                             </style>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Service Image</label>
+                                    <label for="example-text-input" class="form-control-label light-text">Service Image</label>
                                     <!-- <input class="form-control" type="file"> -->
                                     <div class="upload-box" id="uploadBox">
                                         <i class="fas fa-cloud-upload-alt"></i>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="example-text-input" class="form-control-label">Gallery Images (Multiple)</label>
+                                    <label for="example-text-input" class="form-control-label light-text">Gallery Images (Multiple)</label>
                                     <!-- <input class="form-control" type="file"> -->
                                     <div class="upload-box" id="uploadBox">
                                         <i class="fas fa-cloud-upload-alt"></i>

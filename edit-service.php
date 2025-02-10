@@ -32,7 +32,7 @@
                 <div class="card-header dark-bg-still text-white">
                     <div class="d-flex align-items-center">
                         <h4 class="light-text-still mb-0">Edit Service Details</h4>
-                        <button class="btn light-bg ms-auto mb-0"><a href="units.php" class="dark-text-still"><i class="ni ni-bold-left mt-1"></i>&nbsp;&nbsp; Back</a></button>
+                        <button class="btn light-bg ms-auto mb-0"><a href="service.php" class="dark-text-still"><i class="ni ni-bold-left mt-1"></i>&nbsp;&nbsp; Back</a></button>
                     </div>
                 </div>
 

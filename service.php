@@ -36,7 +36,7 @@
 				<div class="card-header dark-bg-still">
 					<div class="d-flex align-items-center">
 						<h4 class="light-text-still mb-0">Services</h4>
-						<button class="btn bg-light ms-auto mb-0"><a href="add-apartment-unit.php" class="dark-text-still"><i class="ni ni-building mt-1"></i>&nbsp;&nbsp;Add Service</a></button>
+						<button class="btn bg-light ms-auto mb-0"><a href="add-service.php" class="dark-text-still"><i class="ni ni-building mt-1"></i>&nbsp;&nbsp;Add Service</a></button>
 					</div>
 				</div>
 				<div class="card-body">
@@ -86,8 +86,8 @@
 										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="edit-service.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-service.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
 												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 												<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 													<div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
@@ -132,8 +132,8 @@
 										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="edit-service.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-service.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
 												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 											</div>
 										</td>
@@ -152,8 +152,8 @@
 										<td class="light-text"><span class="text-white text-uppercase" style="background-color: #549959;font-weight:600;border-radius:8px; padding:6px 18px">Active</span></td>
 										<td>
 											<div class="d-flex">
-												<div class="action-icons"><a href="edit-apartment-unit.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
-												<div class="action-icons"><a href="view-apartment-unit.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="edit-service.php" class="bg-light edit-btn p-2 action-icon-border"><i class="fa fa-pencil-square dark-text-still opacity-10"></i></a></div>
+												<div class="action-icons"><a href="view-service.php" class="bg-light view-btn action-icon-border"><i class="fa fa-eye dark-text-still opacity-10"></i></a></div>
 												<button type="button" class="btn btn-block del-btn bg-light mb-3 p-2" data-bs-toggle="modal" data-bs-target="#modal-delete"><i class="fa fa-trash dark-text-still opacity-10"></i></button>
 											</div>
 										</td>

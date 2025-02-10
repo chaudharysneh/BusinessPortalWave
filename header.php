@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   <title>
-    Wave
+    Wave Business Portal
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -33,6 +33,10 @@
     /* background: #161f2e !important; */
     background: #1A1A27;
     /* background: #000000f0  !important; */
+  }
+
+  .darker-bg{
+    background: #081120 !important;
   }
 
   /* for static======== */
@@ -155,6 +159,15 @@
   .dataTable-dropdown label{
     color:#fff;
   }
+
+  .dataTable-info{
+    color:#fff;
+  }
+
+  .fc-col-header-cell .fc-scrollgrid-sync-inner {
+    padding: 6px;
+    font-size: 18px;
+}
 </style>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -327,10 +340,10 @@
                 href="index.php">Dashboard</a></button>
             <button type="button" class="shadow-none btn btn-block mb-0 " data-bs-toggle="modal" data-bs-target="#modal-default" style="padding:10px; border-radius:25px;"><a
                 style="position: sticky;top: 1.25rem; cursor:pointer;font-size:18px;" class="text-end dark-text px-2 rounded lock-icon"
-                href="index.php">Service</a></button>
+                href="service.php">Service</a></button>
             <button type="button" class=" shadow-none btn btn-block mb-0" data-bs-toggle="modal" data-bs-target="#modal-default" style="padding:10px;"><a
                 style="position: sticky;top: 1.25rem; cursor:pointer;font-size:18px;" class="text-end dark-text px-2 rounded lock-icon"
-                href="index.php">About Us</a></button>
+                href="chat.php">Chat</a></button>
             <button type="button" class=" shadow-none btn btn-block mb-0" data-bs-toggle="modal" data-bs-target="#modal-default" style="padding:10px;"><a
                 style="position: sticky;top: 1.25rem; cursor:pointer;font-size:18px;" class="text-end dark-text px-2 rounded lock-icon"
                 href="index.php">Contact us</a></button>

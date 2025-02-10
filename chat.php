@@ -27,9 +27,9 @@
     }
 
     .people-list .chat-list li:hover {
-        background: #efefef;
+        background:rgba(103, 116, 142, 0.27);;
         cursor: pointer;
-        color: #000005;
+        /* color: #000005; */
     }
 
     .people-list .chat-list li.active {
@@ -82,7 +82,7 @@
 
     .chat .chat-history {
         padding: 20px;
-        border-bottom: 2px solid #fff;
+        /* border-bottom: 2px solid #fff; */
     }
 
     .chat .chat-history ul {
@@ -172,7 +172,7 @@
     }
 
     .chat .chat-message {
-        padding: 20px;
+        padding: 21.2px;
     }
 
     .online,
@@ -264,6 +264,13 @@
             overflow-x: auto;
         }
     }
+
+    .border-top-right-radius{
+        border-top-right-radius: 16px;
+    }
+    .border-bottom-right-radius{
+        border-bottom-right-radius: 16px;
+    }
 </style>
 <?php include 'header.php'; ?>
 
@@ -278,9 +285,7 @@
             </nav>
             <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbarSupportedContent">
 
-
                 <ul class="navbar-nav  justify-content-end">
-
                     <li class="nav-item ps-3 pe-2 d-flex align-items-center d-lg-none">
                         <a href="javascript:;" class="nav-link text-dark p-0" id="iconNavbarSidenav">
                             <div class="sidenav-toggler-inner">
@@ -302,11 +307,11 @@
 
         <div class="row clearfix">
 
-            <div class="col-lg-12 pt-4">
+            <div class="col-lg-12 py-4">
                 <div class="card chat-app" style="border-radius: 18px !important; ">
                     <div class="row">
                         <div class="col-md-4 pe-0">
-                            <div id="plist" class="people-list dark-bg">
+                            <div id="plist" class="people-list dark-bg-still">
                                 <div class="input-group">
                                     <div class="input-group search-area">
                                         <input type="text" class="form-control" placeholder="Search here...">
@@ -318,37 +323,37 @@
                                     <li class="clearfix d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Vincent Porter</div>
+                                            <div class="name light-text-still">Vincent Porter</div>
                                         </div>
                                     </li>
                                     <li class="clearfix active d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Aiden Chavez</div>
+                                            <div class="name light-text-still">Aiden Chavez</div>
                                         </div>
                                     </li>
                                     <li class="clearfix d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Mike Thomas</div>
+                                            <div class="name light-text-still">Mike Thomas</div>
                                         </div>
                                     </li>
                                     <li class="clearfix d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Christian Kelly</div>
+                                            <div class="name light-text-still">Christian Kelly</div>
                                         </div>
                                     </li>
                                     <li class="clearfix d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Monica Ward</div>
+                                            <div class="name light-text-still">Monica Ward</div>
                                         </div>
                                     </li>
                                     <li class="clearfix d-flex align-items-center my-1">
                                         <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
                                         <div class="about">
-                                            <div class="name">Dean Henry</div>
+                                            <div class="name light-text-still">Dean Henry</div>
                                         </div>
                                     </li>
                                 </ul>
@@ -356,7 +361,7 @@
                         </div>
                         <div class="col-md-8 ps-0">
                             <div class="chat">
-                                <div class="chat-header dark-bg-still clearfix">
+                                <div class="chat-header dark-bg-still clearfix border-top-right-radius">
                                     <div class="row">
                                         <div class="col-lg-7">
                                             <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
@@ -372,7 +377,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="chat-history">
+                                <div class="chat-history dark-bg">
                                     <ul class="m-b-0">
                                         <li class="clearfix">
                                             <div class="message-data text-right ms-2">
@@ -416,14 +421,20 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="chat-message clearfix">
+                                <div class="chat-message dark-bg clearfix border-bottom-right-radius">
                                     <div class="input-group mb-0">
                                         <!--<div class="input-group-prepend">-->
                                         <!--    <span class="input-group-text"><i class="fa fa-send"></i></span>-->
                                         <!--</div>-->
                                         <div class="input-group send-area">
                                             <input type="text" class="form-control" placeholder="Enter text here...">
-                                            <span class="input-group-text"><a href=""><i class="fa fa-paper-plane text-dark fs-4"></i></a></span>
+                                            <span class="input-group-text">
+                                                <a href="" id="openDocument"><i class="fa-solid fa-paperclip text-dark fs-5 me-2"></i>
+                                                </a>
+                                                <a href=""><i class="fa fa-paper-plane text-dark fs-5 ms-1"></i></a>
+
+                                                <input type="file" id="fileInput" style="display: none;">
+                                        </span>
                                         </div>
 
                                     </div>
@@ -441,6 +452,12 @@
     </div>
 </div>
 
+<script>
+        document.getElementById('openDocument').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('fileInput').click();
+        });
+    </script>
 
 
 

@@ -35,7 +35,7 @@
     /* background: #000000f0  !important; */
   }
 
-  .darker-bg{
+  .darker-bg {
     background: #081120 !important;
   }
 
@@ -156,18 +156,18 @@
         transform: translate(-50%, -50%); */
   }
 
-  .dataTable-dropdown label{
-    color:#fff;
+  .dataTable-dropdown label {
+    color: #fff;
   }
 
-  .dataTable-info{
-    color:#fff;
+  .dataTable-info {
+    color: #fff;
   }
 
   .fc-col-header-cell .fc-scrollgrid-sync-inner {
     padding: 6px;
     font-size: 18px;
-}
+  }
 </style>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -331,8 +331,56 @@
           </div>
         </div>
 
-        <div class="d-flex gap-2 align-items-center">
+        <!-- ============================== -->
+        <button id="theme-toggle" class="d-lg-none theme-toggle-btn light-bg shadow-none btn btn-block" style="border-radius: 50%; position: absolute; right: 120px; top: 24px; height: 38px; width: 38px; display: flex ; align-items: center; justify-content: center;">
+              <i id="theme-icon" class="fas fa-sun" style="font-size: 20px;color:orange;"></i>
+            </button>
 
+            <a class="btn btn-block d-lg-none light-bg text-end px-2 lock-icon" href="index.php" style="border-radius: 50%; position: absolute; right: 72px; top: 24px; height: 38px; width: 38px; display: flex ; align-items: center; justify-content: center;">
+              <i class="ni ni-bell-55 dark-text" style="font-size: 20px;"></i>
+            </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute; top: 26px; right: 36px;">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars light-text" style="font-size: 32px;"></i></span>
+        </button>
+
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent" style="position: absolute; z-index: 999; right: 20px;left:20px; top: 75px;">
+          <div class="d-flex gap-0 align-items-center flex-column flex-lg-row light-bg p-3 p-lg-0" style="border-radius: 25px;">
+            <a class="w-100 btn btn-block dark-bg shadow-none light-text px-2 mb-0 rounded-pill lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="index.php">Dashboard</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="service.php">Service</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="chat.php">Chat</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid  #cfcfcf;" href="index.php">Post</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="index.php">Sales</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="index.php">Promotions</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="index.php">Setting</a>
+            <a class="w-100 btn btn-block dark-text shadow-none px-2 mb-0 rounded-0 lock-icon" style="border-bottom: 1px solid #cfcfcf;" href="index.php">Profile</a>
+          </div>
+
+          <div class="d-flex gap-2 align-items-center mt-2 mt-lg-0">
+            <!-- <a class="btn btn-block light-bg text-end dark-text px-2 rounded d-flex align-items-center gap-1" href="index.php">
+              <i class="ni ni-settings dark-text" style="font-size: 20px;"></i>
+              <span class="dark-text" style="font-size: 18px;font-weight:bold;">Setting</span>
+            </a> -->
+
+            <!-- <button id="theme-toggle" class="theme-toggle-btn light-bg shadow-none btn btn-block" style="border-radius: 50%;">
+              <i id="theme-icon" class="fas fa-sun" style="font-size: 20px;color:orange;"></i>
+            </button> -->
+
+            <!-- <a class="btn btn-block light-bg text-end px-2 rounded lock-icon" href="index.php">
+              <i class="ni ni-bell-55 dark-text" style="font-size: 20px;"></i>
+            </a> -->
+
+            <!-- <a class="btn btn-block light-bg text-end px-2 rounded lock-icon" href="index.php">
+              <i class="ni ni-single-02 dark-text" style="font-size: 20px;"></i>
+            </a> -->
+          </div>
+        </div>
+        <!-- ======================= -->
+
+        <div class="d-none d-lg-flex gap-2 align-items-center ">
           <div class="light-bg" style="border-radius: 25px; padding: 4px; display: flex; align-items: center; gap: 12px; ">
 
             <button type="button" class="shadow-none btn btn-block mb-0 dark-bg" data-bs-toggle="modal" data-bs-target="#modal-default" style="padding:10px; border-radius:25px;"><a
@@ -382,13 +430,7 @@
           </button>
         </div>
       </div>
-      <!-- <hr class="bg-white mt-2"> -->
-      <!-- <div class="bottom-content">
-        <div class="company-name">
-          <h4 class="light-text-still header-head"> London Wharf - Dashboard | <span class="current-datetime"
-              id="currentDatetime"></span></h4>
-        </div>
-      </div> -->
+
       <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
         aria-hidden="true">
         <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
@@ -497,7 +539,7 @@
         const dates = document.querySelectorAll("a.fc-daygrid-day-number");
         const tablelabels = document.querySelectorAll(".dataTable-dropdown label");
 
-        
+
 
 
         elements.forEach((element) => {
@@ -579,14 +621,14 @@
       });
 
       // Function to update Chart.js legend color
-function updateChartLegendColor(color) {
-    const chartInstance = Chart.getChart('halfCircleChart'); // Get the chart instance
+      function updateChartLegendColor(color) {
+        const chartInstance = Chart.getChart('halfCircleChart'); // Get the chart instance
 
-    if (chartInstance) {
-        chartInstance.options.plugins.legend.labels.color = color; // Update legend text color
-        chartInstance.update(); // Apply changes
-    }
-}
+        if (chartInstance) {
+          chartInstance.options.plugins.legend.labels.color = color; // Update legend text color
+          chartInstance.update(); // Apply changes
+        }
+      }
     </script>
 
 

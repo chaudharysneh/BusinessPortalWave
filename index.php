@@ -647,6 +647,7 @@
               padding: 35,
               max: 1200,
               min: 500,
+              color: "#fefefe",
             },
           },
           x: {
@@ -657,6 +658,7 @@
             },
             ticks: {
               padding: 20,
+              color: "#fefefe",
             },
           },
         },

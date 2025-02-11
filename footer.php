@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       if (dayCell) {
         dayCell.style.backgroundColor = '#FEF9DE';
+        // dayCell.style.backgroundColor = '#ffffffdb';
 
         const dateNumber = dayCell.querySelector('.fc-daygrid-day-number');
         if (dateNumber) {

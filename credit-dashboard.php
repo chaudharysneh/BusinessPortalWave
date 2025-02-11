@@ -67,6 +67,10 @@
         border-radius: 15px;
         overflow: hidden;
     }
+
+    .apexcharts-datalabel-label {
+    fill: #ffffff !important; 
+}
 </style>
 <!-- <div class="container-fluid py-4" style="background-color: #000000e0;"> -->
 <div class="container-fluid py-4 dark_cont_bg">
@@ -113,7 +117,7 @@
                     <h4 class="text-capitalize light-text-still">Limits</h4>
                 </div>
                 <div class="card-body p-3 pt-1">
-                    <div class="chart">
+                    <div class="chart d-flex align-items-center justify-content-center">
                         <div id="doughnutChart1" style="width: 350px; height: 333px"></div>
                     </div>
                 </div>
@@ -122,10 +126,10 @@
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row">
       
         <div class="col-lg-6">
-            <div class="card " style="border-radius: 17px;">
+            <div class="card mb-4" style="border-radius: 17px;">
                 <div class="card-header dark-bg py-2">
                     <div class="d-flex justify-content-between align-items-baseline">
                         <h4 class="mb-0 heading-left text-light">History</h4>
@@ -232,7 +236,7 @@
         const doughnutChart1 = new ApexCharts(
             document.querySelector("#doughnutChart1"),
             (options = {
-                series: [83, 67, 55, 44],
+                series: [83, 67, 55],
                 chart: {
                     height: 350,
                     type: "radialBar",
@@ -243,21 +247,25 @@
                     radialBar: {
                         dataLabels: {
                             name: {
-                                fontSize: "22px",
+                                fontSize: "12px",
+                                color:"#fefefe",
+                                offsetY: -5,
                             },
                             value: {
-                                fontSize: "16px",
+                                fontSize: "20px",
+                                color:"#fefefe",
+                                offsetY: 5,
                             },
                             total: {
                                 show: true,
                                 label: "Total",
                                 formatter: function(w) {
-                                    return 249;
+                                    return 87;
                                 },
                             },
                         },
                         hollow: {
-                            size: "40%",
+                            size: "15%",
                         },
                         track: {
                             strokeWidth: "100%",
@@ -268,8 +276,8 @@
                 stroke: {
                     lineCap: "round",
                 },
-                labels: ["Desktop", "Tablet", "Mobile", "Others"],
-                colors: ["#4a6cf7", "#f2994a", "#d50100", "#f7c800"],
+                labels: ["Desktop", "Tablet", "Mobile"],
+                colors: ["#009990", "#E1FFBB", "#074799"],
             })
         );
         doughnutChart1.render();
@@ -375,6 +383,7 @@
                             padding: 35,
                             max: 1200,
                             min: 500,
+                            color: "#fefefe",
                         },
                     },
                     x: {
@@ -385,46 +394,11 @@
                         },
                         ticks: {
                             padding: 20,
+                            color: "#fefefe",
                         },
                     },
                 },
             },
         });
         // =========== chart one end
-    </script>
-
-    <script>
-        const ctx = document.getElementById('halfCircleChart').getContext('2d');
-
-        new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Grocery', 'Sticks', 'Food', 'Delivery', 'Purple'],
-                datasets: [{
-                    data: [12, 19, 10, 15, 8],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(153, 102, 255, 0.5)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                rotation: -90, // Rotate to start from top
-                circumference: 180, // Limit to half circle
-                plugins: {
-                    legend: {
-                        position: 'top',
-                        labels: {
-                            color: 'white' // Set label text color to black
-                        }
-                    }
-                }
-            }
-        });
     </script>

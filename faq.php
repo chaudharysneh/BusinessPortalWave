@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 <nav class="d-none navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
     <div class="container-fluid py-1 px-3 mt-3">
         <nav aria-label="breadcrumb mt-4">
@@ -277,4 +277,4 @@
 
 
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

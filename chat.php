@@ -272,7 +272,7 @@
         border-bottom-right-radius: 16px;
     }
 </style>
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <div class="content-body">
     <nav class="d-none navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
@@ -461,4 +461,4 @@
 
 
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

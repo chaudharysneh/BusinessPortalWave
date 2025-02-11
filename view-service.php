@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 <nav class="navbar d-none navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
         <div class="container-fluid py-1 px-3 mt-3">
@@ -178,4 +178,4 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

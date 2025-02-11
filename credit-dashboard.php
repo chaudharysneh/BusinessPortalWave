@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <style>
     p.text-sm.mb-0.text-uppercase.font-weight-bold {
@@ -229,7 +229,7 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include 'layout/footer.php'; ?>
 
     <script>
         //============ doughnutChart1 start
